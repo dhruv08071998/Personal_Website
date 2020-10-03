@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Why I choose to do coding?</title>
+</head>
+
+<body>
+    <style>
+        html {
+            background-color: #231F20;
+        }
+        #heading {
+            color: aliceblue;
+            border-left: 3px solid aliceblue;
+            border-right: 3px solid aliceblue;
+        }
+
+        #heading-author {
+            color: aliceblue;
+        }
+
+        .table-content {
+            color: aliceblue;
+        }
+
+        #comments-section1 {
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            height: auto;
+            display: block;
+            border: 3px solid aliceblue;
+            float: left;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .formTable{
+            justify-content: space-around;
+            align-items: left;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            #comments-section1 {
+                width: 100%;
+                display: block;
+                height: auto;
+                margin-bottom: 0px;
+            }
+            .txtFeedback {
+                display: block;
+                width: 180px;
+            }
+        }
+    </style>
+    <div id="slideout-menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="blogslist.html">Blog</a>
+            </li>
+            <li>
+                <a href="projectlist.html">Projects</a>
+            </li>
+            <li>
+                <a href="Skills_Experience.html">Skills & Experience</a>
+            </li>
+            <li>
+                <a href="About Me.html">About Me</a>
+            </li>
+            <li>
+                <input type="text" placeholder="Search Here">
+            </li>
+        </ul>
+    </div>
+
+    <nav>
+        <div id="logo-img">
+            <a href="#">
+                <img src="img/logo.png" alt="GTCoding Logo">
+            </a>
+        </div>
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="active" href="blogslist.html">Blog</a>
+            </li>
+            <li>
+                <a href="projectlist.html">Projects</a>
+            </li>
+            <li>
+                <a href="Skills_Experience.html">Skills & Experience</a>
+            </li>
+            <li>
+                <a href="About Me.html">About Me</a>
+            </li>
+            <li>
+                <div id="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="searchbox">
+        <input type="text" placeholder="Search Here">
+    </div>
+
+    <main>
+
+        <h2 id="heading" class="page-heading">Why I choose to do coding?</h2>
+        <div id="post-container">
+            <section id="blogpost">
+                <div class="card">
+                    <div class="card-meta-blogpost" id="heading-author">
+                        Posted by Dhruv Upadhyay on 01/01/2018 in
+                        <a href="#">Web Dev</a>
+                    </div>
+                    <div class="card-image">
+                        <img src="img/1.jpg" alt="Card Image">
+                    </div>
+                    <div class="card-description">
+                        <h3></h3>
+                        <p>Every generation witnesses the beginning of some new technologies which radically change
+                            their way of living. For me, it was the rise of Computers. I grew up observing my father
+                            work in the programming field where he was involved in the designing, writing, and testing
+                            of computer codes. On my visits to his office, I was fascinated to see the industry works
+                            and had decided to make a career in this field. Also, I was introduced to the programming
+                            languages in school and I enjoyed playing with codes and using different HTML tags to
+                            produce different outputs. I still remember the sense of happiness I had when I successfully
+                            compiled the code and produced the desired output. To add to this, I have always been fond
+                            of computer games and as a kid, was highly curious to know how a particular game operates
+                            with a single command of the player and the code behind different game characters. Thus, my
+                            interest in the field coupled with a natural inclination for subjects such as math and
+                            computer and knowledge gained through school seminars motivated me to pursue Computer
+                            Engineering as my undergraduate program.</p>
+                    </div>
+                    <div id="comments-section1" class="table-content">
+                        Comments Section
+                        <html>
+                        <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                            <script type="text/javascript">
+                                function ValidateForm(frm) {
+                                    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                                    if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                                    if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                                    return true;
+                                }
+                            </script>
+                            <table style="width:auto;border:0;" class="formTable" cellpadding="8" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <label for="Name" class="table-content">Name*:</label>
+                                    </td>
+                                    <td>
+                                        <input name="Name" class="txtFeedback" type="text" maxlength="60"
+                                             />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="PhoneNumber" class="table-content">Phone number:</label>
+                                    </td>
+                                    <td>
+                                        <input name="PhoneNumber" class="txtFeedback" type="text" maxlength="43"
+                                             />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="FromEmailAddress" class="table-content">Email address*:</label>
+                                    </td>
+                                    <td>
+                                        <input name="FromEmailAddress" class="txtFeedback" type="text" maxlength="90"
+                                             />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="Comments" class="table-content">Comments*:</label>
+                                    </td>
+                                    <td>
+                                        <textarea name="Comments" class="txtFeedback" rows="7" cols="40"
+                                            style=" padding-top: 10px; border-radius: 5px; height: 100px; font-size: 13px;"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-content">
+                                        * - required fields
+                                    </td>
+                                    <td>
+                                        <div style="float:right"><a href="https://www.100forms.com" id="lnk100"
+                                                title="form to email" class="table-content">form to email</a></div>
+                                        <input name="skip_Submit" class="txtFeedbackBtn" type="submit" value="Submit" />
+                                        <script
+                                            src="https://www.100forms.com/js/FORMKEY:235S4HHZ4MKF/SEND:dhruv.upadhyay1998@gmail.com"
+                                            type="text/javascript"></script>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+    
+                        </html>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                <p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="About Me.html">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="blogslist.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="projectlist.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="Skills_Experience.html">Skills & Experience</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <div id="right-footer">
+                <h3>Follow me and connect me on</h3>
+                <div id="social-media-footer">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/dhruv.upadhyay.7">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dhruv-upadhyay-b61481140/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/a_code_boy/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/dhruv08071998/">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---<p>This website is developed by GTCoding</p>--->
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
