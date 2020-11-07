@@ -491,6 +491,7 @@ footer #social-media-footer ul li:hover a .fa-github {
   footer {
     flex-direction: column;
     text-align: center;
+    margin-top: 150px;
   }
 
   footer #left-footer {
